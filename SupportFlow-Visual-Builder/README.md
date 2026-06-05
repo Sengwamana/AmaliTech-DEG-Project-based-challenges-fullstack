@@ -132,8 +132,11 @@ Dark-mode theme matching SupportFlow AI's brand identity.
 
 ### Design File
 
-> [View Design System in Penpot](https://penpot.app) — Open the `SupportFlow-Visual-Builder` project for full design frames including node cards, canvas layout, connectors, and color semantics.  
-> _Alternatively, a PDF export of the design system is available upon request._
+> [View Design System in Penpot](https://penpot.app) — Open the `SupportFlow-Visual-Builder` project for full design frames including node cards, canvas layout, connectors, and color semantics.
+>
+> Full design specifications for every component, state, and variant are documented in [`DESIGN.md`](./DESIGN.md). Use these specs to recreate the design in Penpot or Figma.
+>
+> **Important:** Ensure the design file is shared with **"Anyone with the link can view"** permission, then replace the placeholder link above with the actual share URL.
 
 ---
 

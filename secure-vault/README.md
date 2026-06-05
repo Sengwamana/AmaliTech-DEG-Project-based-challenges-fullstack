@@ -136,8 +136,11 @@ Every interactive component defines: `default` → `hover` → `active` → `foc
 
 ### Design File
 
-> [View Design System in Penpot](https://penpot.app) — Open the `SecureVault-Dashboard` project for full design frames including typography scale, color palette, spacing grid, and component states.  
-> _Alternatively, a PDF export of the design system is available upon request._
+> [View Design System in Penpot](https://penpot.app) — Open the `SecureVault-Dashboard` project for full design frames including typography scale, color palette, spacing grid, and component states.
+>
+> Full design specifications for every component, state, and variant are documented in [`DESIGN.md`](./DESIGN.md). Use these specs to recreate the design in Penpot or Figma.
+>
+> **Important:** Ensure the design file is shared with **"Anyone with the link can view"** permission, then replace the placeholder link above with the actual share URL.
 
 ---
 
