@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    border-color: #232a3e;
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    background-color: #090b14;
+    color: #a8b1c9;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+  }
+
+  ::selection {
+    background-color: rgba(76, 110, 245, 0.2);
+    color: white;
+  }
+
+  :focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(76, 110, 245, 0.5), 0 0 0 4px #090b14;
+    transition: all 0.075s ease;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(53, 61, 84, 0.5);
+    border-radius: 9999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(71, 81, 107, 0.6);
+  }
+
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+}
+
+.node-card {
+  position: absolute;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(35, 42, 62, 0.8);
+  background: linear-gradient(135deg, rgba(26, 32, 50, 0.95), rgba(17, 22, 36, 0.95));
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s cubic-bezier(0.25, 1, 0.5, 1);
+  backdrop-filter: blur(8px);
+}
+
+.node-card:hover {
+  box-shadow: 0 0 16px rgba(76, 110, 245, 0.15), 0 4px 12px rgba(0, 0, 0, 0.3);
+  border-color: rgba(76, 110, 245, 0.3);
+  transform: translateY(-1px);
+}
+
+.node-card.selected {
+  box-shadow: 0 0 20px rgba(76, 110, 245, 0.2), 0 4px 12px rgba(0, 0, 0, 0.3);
+  outline: none;
+  border-color: rgba(76, 110, 245, 0.5);
+}
+
+.node-card.selected::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: 0.85rem;
+  background: linear-gradient(135deg, rgba(76, 110, 245, 0.2), transparent 50%);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.connector-line {
+  stroke: rgba(53, 61, 84, 0.8);
+  fill: none;
+  stroke-width: 1.5;
+  transition: stroke 0.2s ease;
+}
+
+.connector-line:hover {
+  stroke: rgba(76, 110, 245, 0.4);
+}
+
+.connector-label-bg {
+  fill: #1a2032;
+  stroke: #232a3e;
+  stroke-width: 1;
+  rx: 4;
+}
+
+.connector-label {
+  fill: #7d88a8;
+  font-size: 10px;
+  font-family: 'Inter', system-ui, sans-serif;
+  letter-spacing: 0.01em;
+}

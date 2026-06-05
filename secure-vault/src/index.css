@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-surface-800;
+  }
+
+  html {
+    @apply antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply bg-surface-950 text-surface-300 font-sans text-base;
+  }
+
+  ::selection {
+    @apply bg-primary-500/20 text-white;
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-primary-500/50 ring-offset-2 ring-offset-surface-950 transition-all duration-75;
+  }
+
+  ::-webkit-scrollbar {
+    @apply w-1.5 h-1.5;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-surface-700/50 rounded-full hover:bg-surface-600/60 transition-colors;
+  }
+
+  ::-webkit-scrollbar-corner {
+    @apply bg-transparent;
+  }
+
+  kbd {
+    @apply inline-flex items-center justify-center min-w-[1.5rem] h-5 px-1.5 rounded
+           bg-surface-850 border border-surface-700/60 font-mono text-2xs
+           text-surface-400 shadow-xs;
+  }
+}
+
+@layer components {
+  .sidebar-section-header {
+    @apply flex items-center gap-2 px-3 py-2.5;
+  }
+
+  .sidebar-section-title {
+    @apply text-2xs font-semibold uppercase tracking-[0.08em] text-surface-500;
+  }
+
+  .glass-panel {
+    @apply bg-surface-900/60 backdrop-blur-xl border border-surface-800/50 shadow-lg;
+  }
+
+  .glass-input {
+    @apply bg-surface-850/80 border border-surface-700/60
+           text-surface-200 text-sm placeholder-surface-500
+           focus:outline-none focus:border-primary-500/50 focus:ring-1 focus:ring-primary-500/30
+           transition-all duration-200;
+  }
+
+  .panel-card {
+    @apply bg-surface-900/40 rounded-xl border border-surface-800/50 shadow-sm;
+  }
+
+  .file-row {
+    @apply flex items-center gap-2 px-2 py-1.5 rounded-lg cursor-pointer select-none
+           text-sm transition-all duration-150;
+  }
+
+  .file-row-hover {
+    @apply hover:bg-surface-800/60 hover:text-surface-200;
+  }
+
+  .file-row-selected {
+    @apply bg-primary-500/10 text-primary-300 border border-primary-500/20 shadow-glow-sm;
+  }
+
+  .accent-left-border {
+    @apply relative;
+  }
+
+  .accent-left-border::before {
+    content: '';
+    @apply absolute left-0 top-1 bottom-1 w-0.5 rounded-r-sm bg-primary-500 opacity-0
+           transition-opacity duration-200;
+  }
+
+  .accent-left-border.active::before {
+    @apply opacity-100;
+  }
+
+  .text-highlight {
+    @apply text-warning-300;
+  }
+}
