@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 300" width="500" height="300">
+  <defs>
+    <linearGradient id="connectorGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#47516b" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#47516b" stop-opacity="0.4"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#47516b"/>
+    </marker>
+  </defs>
+
+  <rect width="500" height="300" fill="#090b14"/>
+
+  <text x="12" y="24" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#5c6685" letter-spacing="0.5">CONNECTOR SPECS</text>
+
+  <!-- Source node (top) -->
+  <rect x="120" y="50" width="100" height="40" rx="8" fill="#111624" fill-opacity="0.5" stroke="#47516b" stroke-width="1"/>
+  <text x="170" y="75" font-family="Inter, sans-serif" font-size="10" fill="#7d88a8" text-anchor="middle">Node A</text>
+
+  <!-- Bezier curve -->
+  <path d="M170 90 C170 140, 250 140, 250 190" fill="none" stroke="url(#connectorGrad)" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Target node (bottom-right) -->
+  <rect x="200" y="200" width="100" height="40" rx="8" fill="#111624" fill-opacity="0.5" stroke="#47516b" stroke-width="1"/>
+  <text x="250" y="225" font-family="Inter, sans-serif" font-size="10" fill="#7d88a8" text-anchor="middle">Node B</text>
+
+  <!-- Label pill -->
+  <rect x="137" y="136" width="66" height="18" rx="6" fill="#1a2032" stroke="#232a3e" stroke-width="1"/>
+  <text x="170" y="149" font-family="Inter, sans-serif" font-size="9" fill="#7d88a8" text-anchor="middle">Yes</text>
+
+  <!-- Annotations -->
+  <line x1="170" y1="90" x2="170" y2="110" stroke="#47516b" stroke-width="0.5" stroke-dasharray="2,2"/>
+  <line x1="90" y1="110" x2="170" y2="110" stroke="#47516b" stroke-width="0.5" stroke-dasharray="2,2"/>
+  <text x="85" y="114" font-family="Inter, sans-serif" font-size="9" fill="#47516b" text-anchor="end">from: bottom-center (x + w/2, y + h)</text>
+
+  <line x1="250" y1="200" x2="250" y2="185" stroke="#47516b" stroke-width="0.5" stroke-dasharray="2,2"/>
+  <line x1="250" y1="185" x2="320" y2="185" stroke="#47516b" stroke-width="0.5" stroke-dasharray="2,2"/>
+  <text x="324" y="189" font-family="Inter, sans-serif" font-size="9" fill="#47516b">to: top-center (x + w/2, y)</text>
+
+  <!-- Formula -->
+  <text x="12" y="276" font-family="JetBrains Mono, monospace" font-size="9" fill="#47516b">M {fromX} {fromY+12} C {fromX} {fromY+12+cp}, {toX} {toY-cp}, {toX} {toY}</text>
+  <text x="12" y="290" font-family="Inter, sans-serif" font-size="10" fill="#47516b">cp = abs(fromY - toY) * 0.4 (clamped min 40px)</text>
+</svg>

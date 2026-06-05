@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 520" width="320" height="520">
+  <rect width="320" height="520" fill="#090b14"/>
+
+  <!-- EMPTY STATE -->
+  <text x="12" y="24" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#5c6685" letter-spacing="0.5">EDITOR — EMPTY</text>
+
+  <rect x="0" y="36" width="320" height="36" stroke="#232a3e" stroke-width="0.5" stroke-opacity="0.25"/>
+  <rect x="12" y="44" width="20" height="20" rx="6" fill="#4c6ef5" fill-opacity="0.1" stroke="#4c6ef5" stroke-width="1" stroke-opacity="0.13"/>
+  <path d="M16 50l4 4 6-6" fill="none" stroke="#748ffc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="40" y="60" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#5c6685" letter-spacing="0.8">NODE EDITOR</text>
+
+  <rect x="128" y="160" width="40" height="40" rx="12" fill="#232a3e" fill-opacity="0.25" stroke="#232a3e" stroke-opacity="0.19"/>
+  <circle cx="148" cy="180" r="12" fill="none" stroke="#5c6685" stroke-width="1.5"/>
+  <path d="M144 176a4 4 0 118 0v2a4 4 0 01-8 0v-2zM148 184v2" fill="none" stroke="#5c6685" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="148" y="222" font-family="Inter, sans-serif" font-size="13" font-weight="500" fill="#5c6685" text-anchor="middle">No node selected</text>
+  <text x="148" y="240" font-family="Inter, sans-serif" font-size="12" fill="#47516b" text-anchor="middle">Click any node on the canvas</text>
+  <text x="148" y="256" font-family="Inter, sans-serif" font-size="12" fill="#47516b" text-anchor="middle">to edit its content</text>
+
+  <!-- EDITING STATE -->
+  <text x="12" y="300" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#5c6685" letter-spacing="0.5">EDITOR — EDITING</text>
+
+  <rect x="0" y="312" width="320" height="36" stroke="#232a3e" stroke-width="0.5" stroke-opacity="0.25"/>
+  <rect x="12" y="320" width="20" height="20" rx="6" fill="#4c6ef5" fill-opacity="0.1" stroke="#4c6ef5" stroke-width="1" stroke-opacity="0.13"/>
+  <path d="M16 326l4 4 6-6" fill="none" stroke="#748ffc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="40" y="336" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#5c6685" letter-spacing="0.8">NODE EDITOR</text>
+
+  <!-- Type badge -->
+  <rect x="12" y="360" width="62" height="18" rx="4" fill="#4c6ef5" fill-opacity="0.09" stroke="#4c6ef5" stroke-width="1" stroke-opacity="0.13"/>
+  <text x="16" y="373" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#748ffc" letter-spacing="0.5">QUESTION</text>
+
+  <!-- Node ID -->
+  <text x="280" y="373" font-family="JetBrains Mono, monospace" font-size="10" fill="#47516b">n-002</text>
+
+  <!-- Textarea -->
+  <rect x="12" y="392" width="280" height="72" rx="8" fill="#1a2032" fill-opacity="0.5" stroke="#4c6ef5" stroke-width="1" stroke-opacity="0.25"/>
+  <text x="24" y="416" font-family="Inter, sans-serif" font-size="13" fill="#d1d6e3">Are you looking for support</text>
+  <text x="24" y="436" font-family="Inter, sans-serif" font-size="13" fill="#d1d6e3">or account help?</text>
+  <rect x="236" y="452" width="1" height="14" fill="#748ffc"/>
+
+  <!-- Options label -->
+  <text x="12" y="490" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#5c6685" letter-spacing="0.8">OPTIONS</text>
+
+  <!-- Option rows -->
+  <rect x="12" y="502" width="280" height="28" rx="6" fill="#1a2032" fill-opacity="0.3" stroke="#232a3e" stroke-width="1"/>
+  <circle cx="26" cy="516" r="3" fill="#4c6ef5" fill-opacity="0.5"/>
+  <text x="38" y="520" font-family="Inter, sans-serif" font-size="12" fill="#a8b1c9">Technical Support</text>
+</svg>

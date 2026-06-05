@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" width="600" height="500">
+  <rect width="600" height="500" fill="#090b14"/>
+
+  <text x="12" y="24" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#5c6685" letter-spacing="0.5">PREVIEW MODE — CHAT INTERFACE</text>
+
+  <!-- Chat card -->
+  <rect x="100" y="50" width="400" height="420" rx="16" fill="#111624" fill-opacity="0.7" stroke="#232a3e" stroke-width="1" stroke-opacity="0.5"/>
+
+  <!-- Traffic light dots -->
+  <circle cx="126" cy="74" r="5" fill="#ff6b6b" fill-opacity="0.8"/>
+  <circle cx="142" cy="74" r="5" fill="#fcc419" fill-opacity="0.8"/>
+  <circle cx="158" cy="74" r="5" fill="#20c997" fill-opacity="0.8"/>
+
+  <!-- Header -->
+  <text x="180" y="79" font-family="Inter, sans-serif" font-size="13" font-weight="600" fill="#d1d6e3">SupportFlow AI</text>
+
+  <!-- Pulse indicator -->
+  <circle cx="468" cy="74" r="4" fill="#20c997"/>
+  <circle cx="468" cy="74" r="4" fill="none" stroke="#20c997" stroke-opacity="0.4" stroke-width="2">
+    <animate attributeName="r" values="4;8;4" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;0;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+
+  <line x1="100" y1="90" x2="500" y2="90" stroke="#232a3e" stroke-width="1" stroke-opacity="0.38"/>
+
+  <!-- Bot message -->
+  <rect x="120" y="108" width="240" height="64" rx="12" fill="#232a3e" stroke="#232a3e" stroke-width="1"/>
+  <text x="136" y="132" font-family="Inter, sans-serif" font-size="12" fill="#a8b1c9">Welcome! I&apos;m your support</text>
+  <text x="136" y="150" font-family="Inter, sans-serif" font-size="12" fill="#a8b1c9">assistant. How can I help</text>
+  <text x="136" y="168" font-family="Inter, sans-serif" font-size="12" fill="#a8b1c9">you today?</text>
+
+  <!-- Option buttons -->
+  <rect x="120" y="196" width="360" height="38" rx="10" fill="#1a2032" stroke="#232a3e" stroke-width="1"/>
+  <text x="144" y="220" font-family="Inter, sans-serif" font-size="13" font-weight="500" fill="#d1d6e3">A. Technical Support</text>
+
+  <rect x="120" y="240" width="360" height="38" rx="10" fill="#1a2032" stroke="#232a3e" stroke-width="1"/>
+  <text x="144" y="264" font-family="Inter, sans-serif" font-size="13" font-weight="500" fill="#d1d6e3">B. Billing &amp; Account</text>
+
+  <rect x="120" y="284" width="360" height="38" rx="10" fill="#1a2032" stroke="#232a3e" stroke-width="1"/>
+  <text x="144" y="308" font-family="Inter, sans-serif" font-size="13" font-weight="500" fill="#d1d6e3">C. Something Else</text>
+
+  <!-- End state -->
+  <line x1="100" y1="344" x2="500" y2="344" stroke="#232a3e" stroke-width="1" stroke-opacity="0.38"/>
+
+  <text x="136" y="370" font-family="Inter, sans-serif" font-size="12" fill="#5c6685">Selected: Technical Support</text>
+
+  <!-- Bot reply -->
+  <rect x="120" y="388" width="240" height="48" rx="12" fill="#232a3e" stroke="#232a3e" stroke-width="1"/>
+  <text x="136" y="412" font-family="Inter, sans-serif" font-size="12" fill="#a8b1c9">Thanks for contacting us!</text>
+  <text x="136" y="428" font-family="Inter, sans-serif" font-size="12" fill="#a8b1c9">Have a great day.</text>
+
+  <!-- Start Over button -->
+  <rect x="180" y="448" width="240" height="36" rx="10" fill="#4c6ef5" fill-opacity="0.15" stroke="#4c6ef5" stroke-width="1" stroke-opacity="0.2"/>
+  <text x="300" y="472" font-family="Inter, sans-serif" font-size="13" font-weight="500" fill="#748ffc" text-anchor="middle">Start Over</text>
+</svg>

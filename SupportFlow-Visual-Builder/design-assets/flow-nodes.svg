@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" width="720" height="420">
+  <defs>
+    <linearGradient id="cardBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#111624" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#111624" stop-opacity="0.5"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="720" height="420" fill="#090b14"/>
+
+  <!-- START NODE -->
+  <text x="12" y="24" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#5c6685" letter-spacing="0.5">START NODE — accent-500/30 border</text>
+
+  <rect x="12" y="40" width="224" height="90" rx="12" fill="url(#cardBg)" stroke="#20c997" stroke-width="1" stroke-opacity="0.19"/>
+  <rect x="28" y="56" width="48" height="18" rx="4" fill="#20c997" fill-opacity="0.09" stroke="#20c997" stroke-width="1" stroke-opacity="0.13"/>
+  <text x="32" y="69" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#38d9a9" letter-spacing="0.5">START</text>
+  <text x="212" y="69" font-family="JetBrains Mono, monospace" font-size="10" fill="#47516b">n-001</text>
+  <text x="28" y="96" font-family="Inter, sans-serif" font-size="13" font-weight="500" fill="#d1d6e3">Welcome! How can I help you today?</text>
+
+  <!-- Dimensions label -->
+  <line x1="12" y1="140" x2="236" y2="140" stroke="#232a3e" stroke-width="0.5"/>
+  <text x="124" y="152" font-family="Inter, sans-serif" font-size="10" fill="#47516b" text-anchor="middle">224px</text>
+
+  <!-- QUESTION NODE -->
+  <text x="12" y="184" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#5c6685" letter-spacing="0.5">QUESTION NODE — primary-500/30 border</text>
+
+  <rect x="12" y="200" width="224" height="148" rx="12" fill="url(#cardBg)" stroke="#4c6ef5" stroke-width="1" stroke-opacity="0.19"/>
+  <rect x="28" y="216" width="62" height="18" rx="4" fill="#4c6ef5" fill-opacity="0.09" stroke="#4c6ef5" stroke-width="1" stroke-opacity="0.13"/>
+  <text x="32" y="229" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#748ffc" letter-spacing="0.5">QUESTION</text>
+  <text x="212" y="229" font-family="JetBrains Mono, monospace" font-size="10" fill="#47516b">n-002</text>
+  <text x="28" y="256" font-family="Inter, sans-serif" font-size="13" font-weight="500" fill="#d1d6e3">Are you looking for support or account help?</text>
+
+  <line x1="12" y1="278" x2="236" y2="278" stroke="#232a3e" stroke-width="1" stroke-opacity="0.38"/>
+
+  <!-- Option 1 -->
+  <circle cx="36" cy="298" r="3" fill="#4c6ef5" fill-opacity="0.5"/>
+  <text x="46" y="302" font-family="Inter, sans-serif" font-size="12" fill="#7d88a8">Technical Support</text>
+
+  <!-- Option 2 -->
+  <circle cx="36" cy="318" r="3" fill="#47516b"/>
+  <text x="46" y="322" font-family="Inter, sans-serif" font-size="12" fill="#7d88a8">Billing &amp; Account</text>
+
+  <!-- Option 3 -->
+  <circle cx="36" cy="338" r="3" fill="#47516b"/>
+  <text x="46" y="342" font-family="Inter, sans-serif" font-size="12" fill="#7d88a8">Something Else</text>
+
+  <!-- END NODE -->
+  <text x="280" y="24" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#5c6685" letter-spacing="0.5">END NODE — surface-600/20 border</text>
+
+  <rect x="280" y="40" width="224" height="80" rx="12" fill="url(#cardBg)" stroke="#232a3e" stroke-width="1" stroke-opacity="0.19"/>
+  <rect x="296" y="56" width="28" height="18" rx="4" fill="#47516b" fill-opacity="0.13" stroke="#47516b" stroke-width="1" stroke-opacity="0.13"/>
+  <text x="300" y="69" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#7d88a8" letter-spacing="0.5">END</text>
+  <text x="480" y="69" font-family="JetBrains Mono, monospace" font-size="10" fill="#47516b">n-005</text>
+  <text x="296" y="98" font-family="Inter, sans-serif" font-size="13" font-weight="500" fill="#d1d6e3">Thanks for contacting us! Have a great day.</text>
+
+  <!-- SELECTED state overlay -->
+  <text x="280" y="184" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#5c6685" letter-spacing="0.5">SELECTED STATE</text>
+
+  <rect x="280" y="200" width="224" height="90" rx="12" fill="url(#cardBg)" stroke="#4c6ef5" stroke-width="2" stroke-opacity="0.5"/>
+  <rect x="280" y="200" width="224" height="90" rx="12" fill="none" stroke="#4c6ef5" stroke-opacity="0.2"/>
+  <!-- Glow effect (simulated) -->
+  <rect x="279" y="199" width="226" height="92" rx="13" fill="none" stroke="#4c6ef5" stroke-opacity="0.1" stroke-width="4"/>
+  <rect x="296" y="216" width="62" height="18" rx="4" fill="#4c6ef5" fill-opacity="0.09" stroke="#4c6ef5" stroke-width="1" stroke-opacity="0.13"/>
+  <text x="300" y="229" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#748ffc" letter-spacing="0.5">QUESTION</text>
+  <text x="480" y="229" font-family="JetBrains Mono, monospace" font-size="10" fill="#47516b">n-003</text>
+  <text x="296" y="258" font-family="Inter, sans-serif" font-size="13" font-weight="500" fill="#d1d6e3">What product are you interested in?</text>
+
+  <!-- Tooltip -->
+  <rect x="520" y="230" width="180" height="22" rx="6" fill="#1a2032" stroke="#232a3e" stroke-width="1"/>
+  <text x="530" y="245" font-family="Inter, sans-serif" font-size="10" fill="#7d88a8">Selected: thicker border + glow</text>
+
+  <text x="280" y="360" font-family="Inter, sans-serif" font-size="10" fill="#47516b">All nodes: w-56 (224px), rounded-xl (12px), bg-surface-900/80 backdrop-blur-sm, shadow-lg</text>
+</svg>
